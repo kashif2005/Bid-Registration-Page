@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Email form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+            <div class="email-form">
+                <div class="form-img">
+                    <img src="asset/img/sec.gif" id="main-img" alt="">
+                </div>
+            </div>
+            <div class="form-text">
+                <h1>Thanks for registration with <br>
+                    <span id="changetext"> Bid Management<span1>.</span1> </span>
+                </h1>
+                <p>
+                    Unlock Your Account's Full Potential Click The <br>Button below to secureyour account and ember's on the journey of effortless uploding
+                </p>
+                <button type="submit" onclick="animation()" class="form-btn">Set Password</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+<script>
+    let imgchnage = 0;
+
+    function animation() {
+        // document.getElementsByClassName("")
+        // alert("Hello World");
+
+        if (imgchnage == 0) {
+
+            document.getElementById('main-img').src = "asset/img/crosssign.gif"
+            imgchnage = 1;
+        } else {
+
+            document.getElementById('main-img').src = "asset/img/sec.gif"
+            imgchnage = 0;
+        }
+
+        // if (color == 0) {
+        //     document.getElementById('changetext').style.color = "red"
+        //     color = 1;
+        // } else {
+        //     document.getElementById('changetext').style.color = "blue"
+        //     color = 0;
+        // }
+    }
+</script>
+
+</html>
